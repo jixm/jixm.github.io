@@ -84,7 +84,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="php," />
 
 
 
@@ -100,16 +100,18 @@
 
 
 
-<meta name="description" content="记一笔流水账">
-<meta property="og:type" content="website">
-<meta property="og:title" content="心有一片海">
-<meta property="og:url" content="http://jixiaoming.com/index.html">
+<meta name="description" content="安装php7.1.12下载编译123456789101112131415161718192021222324wget http://cn2.php.net/distributions/php-7.1.12.tar.gztar zxvf php-7.1.12.tar.gzcd php-7.1.12./configure --prefix=/usr/local/php71 \--with-config">
+<meta name="keywords" content="php">
+<meta property="og:type" content="article">
+<meta property="og:title" content="swoole install">
+<meta property="og:url" content="http://jixiaoming.com/2017/11/28/swoole-install/index.html">
 <meta property="og:site_name" content="心有一片海">
-<meta property="og:description" content="记一笔流水账">
+<meta property="og:description" content="安装php7.1.12下载编译123456789101112131415161718192021222324wget http://cn2.php.net/distributions/php-7.1.12.tar.gztar zxvf php-7.1.12.tar.gzcd php-7.1.12./configure --prefix=/usr/local/php71 \--with-config">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-11-28T11:19:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="心有一片海">
-<meta name="twitter:description" content="记一笔流水账">
+<meta name="twitter:title" content="swoole install">
+<meta name="twitter:description" content="安装php7.1.12下载编译123456789101112131415161718192021222324wget http://cn2.php.net/distributions/php-7.1.12.tar.gztar zxvf php-7.1.12.tar.gzcd php-7.1.12./configure --prefix=/usr/local/php71 \--with-config">
 
 
 
@@ -138,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://jixiaoming.com/"/>
+  <link rel="canonical" href="http://jixiaoming.com/2017/11/28/swoole-install/"/>
 
 
 
 
 
-  <title>心有一片海</title>
+  <title>swoole install | 心有一片海</title>
   
 
 
@@ -169,9 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,9 +254,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -286,9 +286,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/28/swoole-install/" itemprop="url">swoole install</a></h1>
+          <h1 class="post-title" itemprop="name headline">swoole install</h1>
         
 
         <div class="post-meta">
@@ -338,9 +336,7 @@
       
 
       
-        
-          
-            <h2 id="安装php7-1-12"><a href="#安装php7-1-12" class="headerlink" title="安装php7.1.12"></a>安装php7.1.12</h2><h3 id="下载编译"><a href="#下载编译" class="headerlink" title="下载编译"></a>下载编译</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">wget http://cn2.php.net/distributions/php-7.1.12.tar.gz</div><div class="line">tar zxvf php-7.1.12.tar.gz</div><div class="line"><span class="built_in">cd</span> php-7.1.12</div><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/php71 \</div><div class="line">--with-config-file-path=/usr/<span class="built_in">local</span>/php71/etc \</div><div class="line">--<span class="built_in">enable</span>-inline-optimization \</div><div class="line">--<span class="built_in">disable</span>-debug \</div><div class="line">--<span class="built_in">enable</span>-rpath \</div><div class="line">--<span class="built_in">enable</span>-shared \</div><div class="line">--<span class="built_in">enable</span>-pcntl \</div><div class="line">--<span class="built_in">enable</span>-sockets \</div><div class="line">--with-openssl \</div><div class="line">--with-curl \</div><div class="line">--<span class="built_in">enable</span>-sysvsem \</div><div class="line">--<span class="built_in">enable</span>-shmop \</div><div class="line">--<span class="built_in">enable</span>-sysvmsg \</div><div class="line">--<span class="built_in">enable</span>-fpm \</div><div class="line">--with-fpm-user=www \</div><div class="line">--with-fpm-group=www \</div><div class="line">--with-pdo-mysql=mysqlnd \</div><div class="line">--with-mcrypt \</div><div class="line">--<span class="built_in">enable</span>-bcmath</div><div class="line"></div><div class="line">sudo make &amp;&amp; make install</div></pre></td></tr></table></figure>
+        <h2 id="安装php7-1-12"><a href="#安装php7-1-12" class="headerlink" title="安装php7.1.12"></a>安装php7.1.12</h2><h3 id="下载编译"><a href="#下载编译" class="headerlink" title="下载编译"></a>下载编译</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">wget http://cn2.php.net/distributions/php-7.1.12.tar.gz</div><div class="line">tar zxvf php-7.1.12.tar.gz</div><div class="line"><span class="built_in">cd</span> php-7.1.12</div><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/php71 \</div><div class="line">--with-config-file-path=/usr/<span class="built_in">local</span>/php71/etc \</div><div class="line">--<span class="built_in">enable</span>-inline-optimization \</div><div class="line">--<span class="built_in">disable</span>-debug \</div><div class="line">--<span class="built_in">enable</span>-rpath \</div><div class="line">--<span class="built_in">enable</span>-shared \</div><div class="line">--<span class="built_in">enable</span>-pcntl \</div><div class="line">--<span class="built_in">enable</span>-sockets \</div><div class="line">--with-openssl \</div><div class="line">--with-curl \</div><div class="line">--<span class="built_in">enable</span>-sysvsem \</div><div class="line">--<span class="built_in">enable</span>-shmop \</div><div class="line">--<span class="built_in">enable</span>-sysvmsg \</div><div class="line">--<span class="built_in">enable</span>-fpm \</div><div class="line">--with-fpm-user=www \</div><div class="line">--with-fpm-group=www \</div><div class="line">--with-pdo-mysql=mysqlnd \</div><div class="line">--with-mcrypt \</div><div class="line">--<span class="built_in">enable</span>-bcmath</div><div class="line"></div><div class="line">sudo make &amp;&amp; make install</div></pre></td></tr></table></figure>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>php.ini</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp php.ini-development /usr/<span class="built_in">local</span>/php71/etc/php.ini</div></pre></td></tr></table></figure>
 <p>php-fpm</p>
@@ -351,14 +347,20 @@
 <h2 id="swoole扩展安装"><a href="#swoole扩展安装" class="headerlink" title="swoole扩展安装"></a>swoole扩展安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">wget http://pecl.php.net/get/swoole-1.9.23.tgz</div><div class="line">tar zxvf swoole-1.9.23.tgz</div><div class="line"><span class="built_in">cd</span> swoole-1.9.23</div><div class="line">phpize</div><div class="line">./configure</div><div class="line">make &amp;&amp; make install</div><div class="line"></div><div class="line"><span class="comment"># vim /usr/local/php71/etc/php.ini</span></div><div class="line">extension = swoole.so</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">php --ri swoole</div><div class="line"></div><div class="line"></div><div class="line">swoole</div><div class="line"></div><div class="line">swoole support =&gt; enabled</div><div class="line">Version =&gt; 1.9.23</div><div class="line">Author =&gt; tianfeng.han[email: mikan.tenny@gmail.com]</div><div class="line">epoll =&gt; enabled</div><div class="line">eventfd =&gt; enabled</div><div class="line">timerfd =&gt; enabled</div><div class="line">signalfd =&gt; enabled</div><div class="line">cpu affinity =&gt; enabled</div><div class="line">spinlock =&gt; enabled</div><div class="line">rwlock =&gt; enabled</div><div class="line">async http/websocket client =&gt; enabled</div><div class="line">Linux Native AIO =&gt; enabled</div><div class="line">zlib =&gt; enabled</div><div class="line">mutex_timedlock =&gt; enabled</div><div class="line">pthread_barrier =&gt; enabled</div><div class="line">futex =&gt; enabled</div><div class="line"></div><div class="line">Directive =&gt; Local Value =&gt; Master Value</div><div class="line">swoole.aio_thread_num =&gt; 2 =&gt; 2</div><div class="line">swoole.display_errors =&gt; On =&gt; On</div><div class="line">swoole.use_namespace =&gt; Off =&gt; Off</div><div class="line">swoole.fast_serialize =&gt; Off =&gt; Off</div><div class="line">swoole.unixsock_buffer_size =&gt; 8388608 =&gt; 8388608</div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
     
     
 
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/Wechat.jpeg" alt="Jelty wechat" style="width: 200px; max-width: 100%;"/>
+    <div></div>
+</div>
+
+      </div>
     
 
     
@@ -367,14 +369,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/php/" rel="tag"># php</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -384,10 +392,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -395,6 +404,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -415,8 +430,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpeg"
@@ -493,6 +517,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装php7-1-12"><span class="nav-number">1.</span> <span class="nav-text">安装php7.1.12</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载编译"><span class="nav-number">1.1.</span> <span class="nav-text">下载编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加入系统服务"><span class="nav-number">1.3.</span> <span class="nav-text">加入系统服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP添加到环境变量"><span class="nav-number">1.4.</span> <span class="nav-text">PHP添加到环境变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#swoole扩展安装"><span class="nav-number">2.</span> <span class="nav-text">swoole扩展安装</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -613,10 +653,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -650,6 +690,14 @@
 
 
  
+
+      <!-- UY BEGIN -->
+
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2146374"></script>
+
+      <!-- UY END -->
+
+  
 
 
 
